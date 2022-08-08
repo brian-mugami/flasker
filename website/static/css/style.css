@@ -1,0 +1,66 @@
+h1 {
+    color: #000000;
+    font-size:30px;
+    font-weight:bold;
+}
+
+h3 {
+    color: #000000;
+    font-size:60px;
+    font-weight:bold;
+    font-style: italic;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    background-color:black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url('/static/images/image5.jpeg'); /*Put your image url*/
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8; /*Value from 0.0 to 1.0*/
+}
+
+#demo{
+    font-size:20px;
+    color:#000000;
+    font-weight:bold;
+}
+
+#project{
+    font-size:40px;
+    color:#000000;
+    font-weight:bold;
+}
+#number{
+    font-size:20px;
+    color:#000000;
+    font-weight:bold;
+}
+h5{
+    color: #000000;
+    font-size:30px;
+    font-weight:bold;
+}
+
+#headings{
+    color: #000000;
+    font-size:30px;
+    font-weight:bold;
+}
+
+#slide3tag{
+    color:	#dc143c;
+    font-size:30px;
+    font-weight:bold;
+}
+#slide4tag{
+    color:	#F8F8FF;
+    font-size:30px;
+    font-weight:bold;
+}

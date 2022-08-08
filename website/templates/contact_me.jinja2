@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{%block content%}
+  <br/>
+  {% if Email %}
+    <h3>We have gotten your message and we are getting back to you shortly</h3>
+   {% else %}
+  <form method="POST" action="/contact">
+    {{ form.hidden_tag()}}
+
+    {{ form.Email.label(class="form-label") }}
+    {{ form.Email(class="form-control") }}
+    <br/> <br/>
+    {{ form.Subject.label(class="form-label") }}
+    {{ form.Subject(class="form-control") }}
+    <br/> <br/>
+    {{ form.Message.label(class="form-label") }}
+    {{ form.Message(class="form-control") }}
+    <br/> <br/>
+    {{ form.Submit(class="btn btn-dark") }}
+    <br/><br/>
+    <li>
+      <img src="{{url_for('static',filename='images/whatsapp.png')}}"width=50>
+      <p id="number"> +254 721 593538 </p>
+    </li>
+    <li>
+        <img src="{{url_for('static', filename='images/phoneicon.jpg')}}"width=50>
+        <p id="number"> +254 721 593538 </p>
+    {% endif %}
+{% endblock %}
