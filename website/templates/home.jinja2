@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 {%block content%}
-
- <h1> NYUMBA SOLUTIONS </h1>
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
 <div class="container-fluid">
   <div class="carousel-indicators">
@@ -49,6 +47,21 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+</div>
+<br><br>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{ url_for('static', filename='images/favicon.ico2.jpg')}}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Nyumba solutions</h5>
+        <p class="card-text">Nyumba solutions offer architectural design & construction services ,planning and designing residential, institutional, leisure, commercial and industrial buildings.</p>
+      </div>
+      <a href="{{url_for('views.about_us')}}" class="btn btn-primary">About Us</a>  <a href="{{url_for('views.contact')}}" class="btn btn-secondary">Contact Us</a>
+    </div>
+  </div>
 </div>
   <p id="demo"> Created by Kindred Solutions</p>
 {% endblock %}

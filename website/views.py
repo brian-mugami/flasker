@@ -17,8 +17,8 @@ def home():
     return render_template('home.jinja2')
 
 @views.route("/about")
-def about_me():
-    render_template('about me.jinja2')
+def about_us():
+    return render_template('aboutus.jinja2')
 
 @views.route("/contact", methods=['POST', "GET"])
 def contact():

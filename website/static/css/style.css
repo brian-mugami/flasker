@@ -11,19 +11,11 @@ h3 {
     font-style: italic;
 }
 
-body::before{
-    content: "";
-    position: absolute;
-    background-color:black;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    background-image: url('/static/images/image5.jpeg'); /*Put your image url*/
-    background-size: cover;
-    background-position: center;
-    opacity: 0.8; /*Value from 0.0 to 1.0*/
+body{
+    background-image: url('/static/images/interiors/int1.jpeg.jpg');
+     opacity: 1;
+     position: center;
+     background-size:cover;
 }
 
 #demo{
@@ -38,8 +30,8 @@ body::before{
     font-weight:bold;
 }
 #number{
-    font-size:20px;
-    color:#000000;
+    font-size:30px;
+    color:white;
     font-weight:bold;
 }
 h5{
@@ -55,7 +47,7 @@ h5{
 }
 
 #slide3tag{
-    color:	#dc143c;
+    color:	white;
     font-size:30px;
     font-weight:bold;
 }
@@ -63,4 +55,15 @@ h5{
     color:	#F8F8FF;
     font-size:30px;
     font-weight:bold;
+}
+.form-label{
+    color: Red;
+    font-weight:bold;
+    font-size:20px;
+}
+.lead{
+    font-weight: bold;
+}
+#about-nyumba{
+    font-family:'oswald', sans-serif;
 }

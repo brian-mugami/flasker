@@ -16,11 +16,13 @@
     {{ form.Message.label(class="form-label") }}
     {{ form.Message(class="form-control") }}
     <br/> <br/>
-    {{ form.Submit(class="btn btn-dark") }}
+    {{ form.Submit(class="btn btn-danger") }}
     <br/><br/>
+  </form>
     <li>
-      <img src="{{url_for('static',filename='images/whatsapp.png')}}"width=50>
+      <a href="https://wa.me/message/G743P3RJHZ37B1"><img src="{{url_for('static',filename='images/whatsapp.png')}}"width=50>
       <p id="number"> +254 721 593538 </p>
+      </a>
     </li>
     <li>
         <img src="{{url_for('static', filename='images/phoneicon.jpg')}}"width=50>
