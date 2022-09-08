@@ -12,7 +12,7 @@ h3 {
 }
 
 body{
-    background-image: url('/static/images/interiors/int1.jpeg.jpg');
+    background-image: url('/static/images/residential house/Rustic/rustic4.jpg');
      opacity: 1;
      position: center;
      background-size:cover;
@@ -57,7 +57,7 @@ h5{
     font-weight:bold;
 }
 .form-label{
-    color: Red;
+    color: #e3f2fd;
     font-weight:bold;
     font-size:20px;
 }
